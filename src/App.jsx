@@ -1,13 +1,25 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import { Navbar } from './components'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Blog from './pages/Blog';
+import About from './pages/About';
+import Links from './pages/Links';
+import './index.css';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
-  )
+    <Router>
+      <div className="font-sans">
+        <Navbar />
+        <Routes>
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/links" element={<Links />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

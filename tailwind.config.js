@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'], // Add Montserrat to the font family
       },
+      colors: {
+        darkGreen: '#002D38',
+      },
     },
   },
   plugins: [],
