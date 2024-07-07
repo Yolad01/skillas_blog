@@ -1,6 +1,7 @@
 
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { skillas_logo } from '../assets';
 import { favicon } from '../assets';
@@ -12,6 +13,9 @@ const Navbar = () => {
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
+
+    const navLinkClass = ({ isActive }) =>
+        isActive ? 'underline' : '';
 
     return (
         <div className='w-screen h-[80px] z-10 bg-white drop-shadow-lg'>
@@ -26,9 +30,9 @@ const Navbar = () => {
 
                 <div className='hidden sm:flex items-center font-sans font-normal sm:text-xl justify-end'>
                     <ul className='flex list-none gap-x-10 ml-auto md:mr-28 sm:mr-10 mr-10 mt-5'>
-                        <li><Link to="/">BLOG</Link></li>
-                        <li><Link to="/about">ABOUT</Link></li>
-                        <li><Link to="/links">LINKS</Link></li>
+                        <li><NavLink to="/" className={navLinkClass}>BLOG</NavLink></li>
+                        <li><NavLink to="/about" className={navLinkClass}>ABOUT</NavLink></li>
+                        <li><NavLink to="/links" className={navLinkClass}>LINKS</NavLink></li>
                     </ul>
                 </div>
 
