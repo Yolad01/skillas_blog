@@ -14,7 +14,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg'>
+        <div className='w-screen h-[80px] z-10 bg-white drop-shadow-lg'>
             <div className='flex justify-between relative'>
                 <div className='hidden sm:flex items-center'>
                     <img src={skillas_logo} alt="Skillas Logo" className="w-28 mt-6 md:ml-20 sm:ml-10" />
@@ -26,7 +26,7 @@ const Navbar = () => {
 
                 <div className='hidden sm:flex items-center font-sans font-normal sm:text-xl justify-end'>
                     <ul className='flex list-none gap-x-10 ml-auto md:mr-28 sm:mr-10 mr-10 mt-5'>
-                        <li><Link to="/blog">BLOG</Link></li>
+                        <li><Link to="/">BLOG</Link></li>
                         <li><Link to="/about">ABOUT</Link></li>
                         <li><Link to="/links">LINKS</Link></li>
                     </ul>

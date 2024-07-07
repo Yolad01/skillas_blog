@@ -7,10 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // Add Montserrat to the font family
+        sans: ['Montserrat', 'sans-serif'],
+        inter: ['Inter']
       },
       colors: {
         darkGreen: '#002D38',
+        grey: '#464646',
       },
     },
   },
