@@ -3,6 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Next from '../components/Next';
+import Newsletter from '../components/Newsletter';
 import picture_1 from '../assets/picture_1.png';
 import picture_2 from '../assets/picture_2.png';
 import picture_four from '../assets/picture_four.png';
@@ -127,6 +128,7 @@ const Article = () => {
                 <div className="article-content" dangerouslySetInnerHTML={{ __html: article.content }} />
             </div>
             <Next />
+            <Newsletter />
         </div>
     );
 };
