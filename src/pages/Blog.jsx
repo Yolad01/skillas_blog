@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Articles from '../components/Articles';
-import Next from '../components/Next';
 import Footer from '../components/Footer';
 
 const Blog = () => {
@@ -12,7 +11,6 @@ const Blog = () => {
             <Navbar />
             <Hero />
             <Articles />
-            <Next />
             <Footer />
         </div>
     );
