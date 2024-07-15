@@ -42,9 +42,6 @@ const Articles = () => {
 
                         <Link to={article.link}>
                             <img src={article.image} alt={article.title} className="w-full xl:h-80 object-cover mb-4" />
-                        </Link>
-
-                        <Link to={article.link}>
                             <h3 className="xl:mx-40 font-sans text-center xs:text-xl xs:font-semibold font-normal hover:underline">{article.title}</h3>
                         </Link>
                     </div>

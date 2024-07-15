@@ -8,7 +8,7 @@ import { icon_linkedin } from '../assets';
 
 const Footer = () => {
     return (
-        <div className='bg-darkGreen'>
+        <div className='bg-darkGreen mt-10'>
             <div className='flex justify-center items-center'>
                 <img src={white_logo} alt="Skillas Logo" className="lg:w-96 xs:w-52 w-40 mt-20 mb-10" />
             </div>
