@@ -16,6 +16,7 @@ export default {
       },
       screens: {
         'xs': '400px',  // Custom extra small breakpoint
+        'portable': '500px',
         'sm': '640px',  // Small devices (default)
         'md': '768px',  // Medium devices (default)
         'lg': '1024px', // Large devices (default)
